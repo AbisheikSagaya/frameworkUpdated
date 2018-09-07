@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1697" started-at="2018-09-06T07:10:08Z" finished-at="2018-09-06T07:10:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1697" started-at="2018-09-06T07:10:08Z" finished-at="2018-09-06T07:10:09Z">
+      <class name="maven_testing_framework.framework.Main">
+        <test-method status="PASS" signature="BeforeMain()[pri:0, instance:maven_testing_framework.framework.Main[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="BeforeMain" is-config="true" duration-ms="1201" started-at="2018-09-06T07:10:08Z" finished-at="2018-09-06T07:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMain -->
+        <test-method status="FAIL" signature="mainControll()[pri:0, instance:maven_testing_framework.framework.Main[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="mainControll" duration-ms="369" started-at="2018-09-06T07:10:09Z" finished-at="2018-09-06T07:10:09Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at utilities.ReadFromExcel.getData(ReadFromExcel.java:23)
+at maven_testing_framework.framework.Main.getTestCases(Main.java:223)
+at maven_testing_framework.framework.Main.mainControll(Main.java:190)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainControll -->
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:maven_testing_framework.framework.Main[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="afterTest" is-config="true" duration-ms="4" started-at="2018-09-06T07:10:09Z" finished-at="2018-09-06T07:10:09Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[D:\framework2_01\framework2\selenium\2018-09-06 12_40_08\reportFiles\testReport.xlsx (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: D:\framework2_01\framework2\selenium\2018-09-06 12_40_08\reportFiles\testReport.xlsx (The system cannot find the file specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at reportgeneration.GenarateHtmlReport.getSheet(GenarateHtmlReport.java:313)
+at reportgeneration.GenarateHtmlReport.getDataFromExcel(GenarateHtmlReport.java:289)
+at reportgeneration.GenarateHtmlReport.getData(GenarateHtmlReport.java:50)
+at reportgeneration.GenarateHtmlReport.generate(GenarateHtmlReport.java:221)
+at maven_testing_framework.framework.Main.afterTest(Main.java:142)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.afterRun(TestRunner.java:725)
+at org.testng.TestRunner.run(TestRunner.java:509)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- maven_testing_framework.framework.Main -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

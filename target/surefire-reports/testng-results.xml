@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="84051" started-at="2018-09-03T18:40:42Z" finished-at="2018-09-03T18:42:06Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="84051" started-at="2018-09-03T18:40:42Z" finished-at="2018-09-03T18:42:06Z">
+      <class name="maven_testing_framework.framework.Main">
+        <test-method status="PASS" signature="BeforeMain()[pri:0, instance:maven_testing_framework.framework.Main[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="BeforeMain" is-config="true" duration-ms="1104" started-at="2018-09-03T18:40:42Z" finished-at="2018-09-03T18:40:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMain -->
+        <test-method status="PASS" signature="mainControll()[pri:0, instance:maven_testing_framework.framework.Main[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="mainControll" duration-ms="67881" started-at="2018-09-03T18:40:43Z" finished-at="2018-09-03T18:41:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainControll -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:maven_testing_framework.framework.Main[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]" name="afterTest" is-config="true" duration-ms="15035" started-at="2018-09-03T18:41:51Z" finished-at="2018-09-03T18:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- maven_testing_framework.framework.Main -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
